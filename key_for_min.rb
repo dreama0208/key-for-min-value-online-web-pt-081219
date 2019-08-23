@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   else
     values = name_hash.collect { |k, v| v }
     min = values[0]
-    values.each_with_index { |v, i| 
+    values.each_with_index { |v, i|
       if values[i] < min
         min = values[i]
       end
@@ -21,4 +21,3 @@ def key_for_min_value(name_hash)
     }
   end
 end
-
